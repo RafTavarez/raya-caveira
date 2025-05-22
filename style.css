@@ -1,8 +1,8 @@
 header {
-  background: url('images/caveira3.png') no-repeat center center/cover;
-  width: min(90vw, 90vh);         
-  height: min(90vw, 90vh);        
-  margin: auto;                  
+  background: url('images/caveira3.png') no-repeat center center/cover;        
+  height: 650px;
+  max-width: 800px;       
+                   
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,26 +15,16 @@ header {
 }
 
   
-  .vinhas-por-cima {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    pointer-events: none;
-  }
-  
-  .vinhas-por-cima img {
-    width: 100%;
-    opacity: 0.7;
-  }
   body {
-    font-size: 22px;
+    font-size: 1rem;
     line-height: 1.6;
     color: #f5f5f5;
     background-color: #0c0c0c;
     font-family: 'Garamond', serif;
     padding: 0 20px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
 }
 
 .header-wrapper {
@@ -43,28 +33,11 @@ header {
   border-radius: 100px;
 }
 
-
-.vinhas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.vinhas img {
-  width: 100%;
-  height: auto;
-  opacity: 0.5;
-}
-
 header h1 {
   font-family: 'Almendra SC', serif;
-  font-size: 3em;
+  font-size: 3.5rem;
   color: #811515;
- margin-bottom: 10px;
+ margin-bottom: 0.5rem;
   position: relative;
 }
 
@@ -77,7 +50,7 @@ header p {
 }
 
 .btn {
-    margin-top: 20px;
+    margin-top: 0.5rem;
     display: inline-block;
     padding: 14px 28px;
     border: 2px solid #7c0000;
@@ -100,11 +73,13 @@ section {
 }
 
 h2 {
+  font-size: 2.5rem;
   color: #bfa76f;
   font-family: 'Cinzel', serif;
 }
 
 h3 {
+  font-size: 1.5rem;
   color: #811515;
   font-family: 'Cinzel', serif;
 }
@@ -126,4 +101,13 @@ footer {
   padding: 40px 20px;
   font-size: 0.9em;
   color: #999;
+}
+p{
+  font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  header p,p {
+  font-size: 1em;
+}
+
 }
